@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+         <ScrollView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+     
+             <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:orientation="vertical">
+			   <com.android.volley.toolbox.NetworkImageView
+	                android:id="@+id/iv_showPlacePhoto"
+	                android:layout_width="match_parent"
+	                android:layout_height="385dip"
+	                android:background="@color/lemonchiffon"
+	                android:layout_gravity="center_horizontal"/>
+			    <LinearLayout 
+			       android:layout_below="@+id/iv_showPlacePhoto"
+			       android:layout_width="match_parent"
+			       android:layout_height="80dp"
+			       android:background="@color/seashell"
+			       android:orientation="vertical">
+			       <TextView 
+			           android:id="@+id/et_showPlaceTitle"
+			           android:layout_width="match_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_marginLeft="5dp"
+		               android:gravity="center_vertical"
+			           android:text="龙凤中学"
+			           android:textSize="25sp"/>
+			       	<TextView 
+				        android:layout_width="match_parent"
+				        android:layout_height="1dp" 
+				        android:background="@color/darkgray"/>
+			       <TextView 
+			           android:id="@+id/et_showPlaceAddr"
+			           android:layout_width="match_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_marginLeft="5dp"
+		               android:gravity="center_vertical"
+		               android:textSize="18sp"
+			           android:text="老家"/>
+		          </LinearLayout>
+			 </LinearLayout>
+          </ScrollView>
+       
+          <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/transparent"
+	        android:layout_alignParentTop="true" >
+	
+	        <Button
+	            android:id="@+id/bt_back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:background="@drawable/back" />
+
+          </RelativeLayout>
+
+</RelativeLayout>
+  
+

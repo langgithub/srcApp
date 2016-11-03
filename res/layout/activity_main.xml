@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       
+    
+   <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+     
+    <include layout="@layout/mymenu"
+        android:id="@+id/menu_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/poi_details"/>
+
+    <include layout="@layout/topbar"
+        android:id="@+id/bar_my"/>
+
+    
+    <RelativeLayout 
+        android:id="@+id/poi_details"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" 
+        android:visibility="gone">
+        
+        <ImageButton 
+            android:id="@+id/ib_top"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:background="@color/gainsboro"/>
+           
+         
+        <ListView 
+            android:id="@+id/lv_showdetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/ib_top"/>
+        
+        <TextView 
+            android:id="@+id/tv_looklist"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_below="@+id/ib_top"
+            android:text="查看列表"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

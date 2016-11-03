@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp" 
+    android:background="@color/deepskyblue">
+    
+    <LinearLayout
+          android:id="@+id/routemap_choose"
+          android:layout_width="180dp"
+          android:layout_height="match_parent"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp" 
+          android:layout_centerInParent="true">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:onClick="onDriveClick" >
+
+              <ImageView
+                  android:id="@+id/route_drive"
+                  android:layout_width="22dp"
+                  android:layout_height="22dp"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center"
+                  android:src="@drawable/route_drive_normal"/>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:onClick="onBusClick" >
+
+              <ImageView
+                  android:id="@+id/route_bus"
+                  android:layout_width="22dp"
+                  android:layout_height="22dp"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:src="@drawable/route_bus_normal" />
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:onClick="onWalkClick" >
+
+              <ImageView
+                  android:id="@+id/route_walk"
+                  android:layout_width="22dp"
+                  android:layout_height="22dp"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:src="@drawable/route_walk_normal" />
+          </RelativeLayout>
+          
+      </LinearLayout>
+    
+       <Button 
+           android:id="@+id/bt_search"
+           android:layout_width="70dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"  
+           android:layout_marginRight="5dp"
+           android:textSize="15sp"
+           android:textColor="@color/white"
+           android:background="@color/transparent"
+           android:text="搜索" />
+</RelativeLayout>
